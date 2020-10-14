@@ -1,0 +1,59 @@
+html,body{
+	height: 80%;
+	background-color: #121212;
+}
+#title-section{
+	font-family: Comic Sans MS, cursive, sans-serif;
+	font-size: 280%;
+	text-align: center;	
+	color: #3904b5;
+	text-shadow: 4px 4px #040fb5;
+}
+#str{
+	position: relative;
+	font-size: 17px;
+	width: 80%;
+	height: 3%;
+	top:20%;
+	left:10%;
+	background-color: #bd0404;
+}
+#output{
+	position: relative;
+	width: 80%;
+	height: 25%;
+	top:10%;
+	left:10%;
+	background-color: #2c2c2e;
+	font-size: 150%;
+	margin-top: 5%;
+	text-align: center;
+}
+
+#clipboard{
+	height: 10%;
+	position: absolute;
+	top:40%;
+	left: 10%
+}
+
+#whatsapp{
+	height: 10%;
+	position: absolute;
+	top:40%;
+	left: 31%
+}
+
+#encode{
+	position: absolute;
+	height: 10%;
+	top:40%;
+	left: 53%
+}
+
+#decode{
+	position: absolute;
+	height: 10%;
+	top:40%;
+	left: 75%
+}
