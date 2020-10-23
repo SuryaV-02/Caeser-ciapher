@@ -201,25 +201,25 @@ img[target=thumbsUP]{
 	overflow: auto;
 }
 #clipboard{
-	position: fixed;
+	position: absolute;
 	height: 11%;
 	left: 5%
 }
 
 #whatsapp{
-	position: fixed;
+	position: absolute;
 	height: 11%;
 	left: 28.5%
 }
 
 #encode{
-	position: fixed;
+	position: absolute;
 	height: 11%;
 	left: 52%
 }
 
 #hidden-button{
-	position: fixed;
+	position: absolute;
 	height: 11%;
 	left: 75%
 	
