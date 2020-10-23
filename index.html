@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script> 
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<h1 id="title-case">The Word Guard</h1>
+	<input type="text" id="str">
+	<img src="data/clipboard.png" class="image-set" id="clipboard" data-clipboard-target="#output">
+	<a id="share-button" href=""
+		data-action="share/whatsapp/share"
+		target="_blank"><img src="data/whatsapp.png" onclick="shareNow()" class="image-set" id="whatsapp"></a>
+	<img src="data/encode.png" onclick="calculate()" class="image-set" id="encode">
+	<div class="image-set" id="hidden-button" onclick="decode()"><img src="data/decode.png" onclick="decode()" onfocus="focus()" id="debug"></div>
+	<div id ="output"></div>
+	<!-- <div id="footer">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp The site is under development. Please mail your suggestions to improve this site to suryaedu71@gmail.com. Thanks for using !!</div> -->
+	  <script src="js/script.js" type="text/javascript"></script>
+
+	<div id ="feedback" onclick="sendFeedback()"><img target="thumbsUP" src="data/thumbsup.png"></div>
+	<div id= "formContainer" >
+	<form id="feedbackForm" method="POST" onsubmit="submitFeedback()">
+		<label >Name : </label>
+		<input style="border-radius: 10px;" type="text" id="fname"><br>
+		<!-- <label >Email : </label>
+		<input type="email" id="email" required><br>
+		<label >Password : </label>
+		<input type="Password" id="Password" required><br> -->
+		<label id ="rating">Rating : </label>
+			<input type="radio" id="r1"> 1
+			<input type="radio" id="r2"> 2
+			<input type="radio" id="r3"> 3
+			<input type="radio" id="r4"> 4
+			<input type="radio" id="r5"> 5
+		<br>
+		<label>Description : </label><br>
+			<textarea style="border-radius: 10px;" id ="description" rows="4" cols="50" form="feedbackForm"></textarea>
+		<input type="submit" value ="Send" id="submitButton">
+	</form>
+	</div>
+
+</body>
+</html>
