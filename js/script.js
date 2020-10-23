@@ -1,6 +1,18 @@
 new ClipboardJS('#clipboard');
-var width =screen.width;
-if(width >450){
+var width = screen.width;
+var height = screen.height;
+if(width<600){
+	let width_value = (width*0.8).toString();
+	let height_value = (height*0.25).toString();
+	width_value+="px";
+	height_value+="px";
+	console.log(width_value);
+	console.log(height_value);
+	document.getElementById("output").style.width = width_value;
+	document.getElementById("output").style.height = height_value;
+
+}
+if(width <600){
 	document.getElementById("whatsapp").src ="data/download.png";
 	document.getElementById("whatsapp").setAttribute("onclick","download()");
 
