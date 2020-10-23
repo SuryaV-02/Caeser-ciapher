@@ -114,7 +114,7 @@ function submitFeedback(){
 }
 function mailSender(name,rating,description){
 	var sub = "subject=" + "Review of your github site -reg";
-	var bdy = "&body=Hello, this is "+name+". I found the following suggestions might make your site better. "+description;
+	var bdy = "&body=Hello, this is "+name+" and my rating for your site is *"+rating +"*. I wanna tell you the following things about your site. "+description;
 	var total = "mailto:suryaedu71@gmail.com?"+sub+bdy;
 	window.open(total);
 	alert("Thank you very much for your feedback!");
