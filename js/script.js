@@ -12,7 +12,7 @@ if(width<600){
 	document.getElementById("output").style.height = height_value;
 
 }
-if(width <600){
+if(width >600){
 	document.getElementById("whatsapp").src ="data/download.png";
 	document.getElementById("whatsapp").setAttribute("onclick","download()");
 
