@@ -120,8 +120,20 @@ function mailSender(name,rating,description){
 	alert("Thank you very much for your feedback!");
 	// window.open('mailto:suryaedu71@gmail.com?subject=subject&body=body');
 }
+function hideIcons(){
+	if(width<600){
+		document.getElementById("clipboard").style.display="none";
+		document.getElementById("whatsapp").style.display="none";
+		document.getElementById("encode").style.display="none";
+		document.getElementById("debug").style.display="none";
+	}
+}
 
-
-function test(){
-	alert("Sent");
+function showIcons(){
+	if(width<600){
+		document.getElementById("clipboard").style.display="initial";
+		document.getElementById("whatsapp").style.display="initial";
+		document.getElementById("encode").style.display="initial";
+		document.getElementById("debug").style.display="initial";
+	}
 }
